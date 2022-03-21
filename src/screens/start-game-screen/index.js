@@ -2,12 +2,12 @@ import {View, Text} from 'react-native';
 import React from 'react';
 import {styles} from './styles';
 
-const Header = ({title}) => {
+const StartGameScreen = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{title}</Text>
+      <Text>StartGameScreen</Text>
     </View>
   );
 };
 
-export default Header;
+export default StartGameScreen;
