@@ -1,12 +1,15 @@
-import {View, Text} from 'react-native';
+import {SafeAreaView} from 'react-native';
 import React from 'react';
 import {styles} from './styles';
+import Header from '../../components/header';
+import Card from '../../components/card';
 
 const StartGameScreen = () => {
   return (
-    <View style={styles.container}>
-      <Text>StartGameScreen</Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <Header title={'Guess the number 🤔'} />
+      <Card />
+    </SafeAreaView>
   );
 };
 
