@@ -18,7 +18,6 @@ export const styles = StyleSheet.create({
     shadowRadius: 16.0,
     elevation: 24,
   },
-
   cardTitle: {
     fontSize: 30,
     color: 'black',
@@ -39,5 +38,17 @@ export const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'center',
+  },
+  startGameContainer: {
+    marginTop: 30,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  confirmedText: {
+    fontSize: 30,
+    fontWeight: 'bold',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });

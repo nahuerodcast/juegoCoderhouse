@@ -1,15 +1,17 @@
-import {SafeAreaView} from 'react-native';
+import {SafeAreaView, TouchableWithoutFeedback, Keyboard} from 'react-native';
 import React from 'react';
 import {styles} from './styles';
 import Header from '../../components/header';
 import Card from '../../components/card';
 
-const StartGameScreen = () => {
+const StartGameScreen = ({onStartGame}) => {
   return (
-    <SafeAreaView style={styles.container}>
-      <Header title={'Guess the number 🤔'} />
-      <Card />
-    </SafeAreaView>
+    <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
+      <SafeAreaView style={styles.container}>
+        <Header title={'Guess the number 🤔'} />
+        <Card onStartGame={onStartGame} />
+      </SafeAreaView>
+    </TouchableWithoutFeedback>
   );
 };
 
