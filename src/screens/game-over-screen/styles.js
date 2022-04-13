@@ -1,13 +1,19 @@
 import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
-  confirmedText: {
-    fontSize: 30,
-    fontWeight: 'bold',
+  container: {
+    height: '85%',
+    display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
   },
+  gameOver: {
+    fontSize: 40,
+    fontWeight: 'bold',
+  },
+  cardContainer: {},
   card: {
+    width: '80%',
     paddingVertical: 20,
     margin: 40,
     display: 'flex',
@@ -24,10 +30,7 @@ export const styles = StyleSheet.create({
     shadowRadius: 16.0,
     elevation: 24,
   },
-  buttonsContainer: {
-    color: 'black',
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'center',
+  tries: {
+    fontSize: 20,
   },
 });

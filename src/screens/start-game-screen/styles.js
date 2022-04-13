@@ -22,7 +22,6 @@ export const styles = StyleSheet.create({
     shadowRadius: 16.0,
     elevation: 24,
   },
-
   cardTitle: {
     fontSize: 30,
     color: 'black',
